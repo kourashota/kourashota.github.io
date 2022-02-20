@@ -50,22 +50,24 @@
     });
   }
 
-  const options = {
+  const inviewcoptions = {
     threshold: 0.3,
   };
 
   const float = document.querySelector(".float");
 
   const targets = document.querySelectorAll(".animate");
-  const inviewobserver = new IntersectionObserver(inviewcallback, options);
+  const inviewobserver = new IntersectionObserver(inviewcallback, inviewcoptions);
 
 
   targets.forEach(target => {
     inviewobserver.observe(target);
   });
 
+  const onscrolloptions = {
+    threshold: 0.35,
+  };
 
-
-  const onscrollobserver = new IntersectionObserver(onscrollcallback);
+  const onscrollobserver = new IntersectionObserver(onscrollcallback, onscrolloptions);
   onscrollobserver.observe(document.getElementById("target"));
 }
