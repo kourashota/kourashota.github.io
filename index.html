@@ -4,11 +4,361 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>山田太郎のポートフォリオサイト</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>3,800円お手頃価格の出張撮影</title>
+  <link rel="icon" href="img/rogo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <h1>山田太郎</h1>
-  <p>UI/UXデザイナー見習いです。ドットインストールで勉強中です！</p>
+  <header>
+    <div class="container animate animate-header">
+      <div class="rogo">
+        <img src="img/2020.png" alt="">
+        <p>tomos photo co.,ltd<br>お手頃価格3,800円の出張撮影</p>
+      </div>
+
+      <nav>
+        <ul>
+          <li id="calendar">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" stroke-width="2.0" stroke="#896760" fill="none" class="duration-300 transform transition-all" style="width: 22px; height: 22px;">
+                <rect x="9.59" y="9.59" width="44.82" height="44.82" rx="2.5"></rect><path d="M9.59 20.59h44.82M19.7 9.59v-5M43.66 9.59v-5M16.14 27.92h6.15v6.15h-6.15zM28.78 27.92h6.15v6.15h-6.15zM41.26 27.92h6.15v6.15h-6.15zM16.36 39.68h6.15v6.15h-6.15zM29.01 39.68h6.15v6.15h-6.15zM41.49 39.68h6.15v6.15h-6.15z"></path>
+              </svg>
+              ご予約
+            </a>
+          </li>
+          <li id="open">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" stroke-width="2.5" stroke="#896760" fill="none" class="duration-300 transform transition-all" style="width: 21px; height: 21px;">
+              <path d="M7.68 32h48.64M7.68 15.97h48.64M7.68 48.03h48.64"></path>
+            </svg>
+            menu
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <div id="target"></div>
+
+  <!-- hero-area -->
+  <section>
+    <div class="wrap">
+      <div class="album">
+          <img class="img1" src="img/sakura01.jpg" alt="tomos photo 札幌・お花見">
+          <img class="img2" src="img/sakura02.jpg" alt="tomos photo 札幌・お花見">
+          <img class="img3" src="img/sakura03.jpg" alt="tomos photo 札幌・お花見">
+          <img class="img4" src="img/sakura04.jpg" alt="tomos photo 札幌・お花見">
+      </div>
+    </div>
+
+    <div class="bar">
+        <div class="swiper-scrollbar"></div>
+        <div class="scrollar">
+            <div class="progress-bar">
+            <div class="loaded"> </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- area-choice/overview -->
+  <section class="areachoice-section">
+    <h2 class="head head-even">
+      エリア選択
+    </h2>
+    <p>
+      ※現在お届けを予定しているのは「関東エリア」のみとなります<br>
+      他エリアについては開催時順次情報を更新いたします
+    </p>
+
+    <div class="areachoice">
+      <a class="btn btn-areachoice-overview" href="#hokkaido">
+        北海道
+      </a>
+      <a class="btn btn-areachoice-overview" href="#tohoku">
+        東北
+      </a>
+      <a class="btn btn-areachoice-overview" href="#kantou">
+        関東
+      </a>
+      <a class="btn btn-areachoice-overview" href="#hokuriku">
+        北陸
+      </a>
+      <a class="btn btn-areachoice-overview" href="#toukai">
+        東海
+      </a>
+      <a class="btn btn-areachoice-overview" href="#kansai">
+        関西
+      </a>
+      <a class="btn btn-areachoice-overview" href="#chushikoku">
+        中四国
+      </a>
+      <a class="btn btn-areachoice-overview" href="#kyusyu">
+        九州
+      </a>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- area-choice/detail -->
+  <!-- <section class="wrap">
+    <div class="headcircle headcircle-odd">
+      <h2 class="head head-odd">
+        北海道エリア
+      </h2>
+    </div>
+    <div class="headtext-odd">
+      <p>
+      現在お届けを予定している企画はございません。
+      </p>
+    </div>
+    <div class="headcircle headcircle-even">
+      <h2 class="head head-even">
+        東北エリア
+      </h2>
+    </div>
+    <div class="headtext-even">
+      <p>
+      現在お届けを予定している企画はございません。
+      </p>
+    </div>
+    <div class="headcircle headcircle-odd">
+      <h2 class="head head-odd">
+        関東エリア
+      </h2>
+    </div>
+    <div class="headtext-odd">
+      <div class="headarea">
+        <h3>　受付中　</h3>
+      </div>
+      <p>- ひまわりフォト -</p>
+      <p>@東京　昭和記念公園</p>
+      <p>@千葉　ふなばしアンデルセン公園</p>
+
+      <a class="btn" href="#">詳細・ご予約はこちら</a>
+
+      <div class="btn2">
+        <a href="#kantou">詳細・ご予約はこちら</a>
+      </div>
+
+      <div class="headarea">
+        <h3>　受付前　</h3>
+      </div>
+      <p>- ひまわりフォト -</p>
+      <p>@東京　昭和記念公園</p>
+      <p>@千葉　ふなばしアンデルセン公園</p>
+    </div>
+    <div class="headcircle headcircle-even">
+      <h2 class="head head-even">
+        北陸エリア
+      </h2>
+    </div>
+    <div class="headtext-even">
+      <p>
+      現在お届けを予定している企画はございません。
+      </p>
+    </div>
+    <div class="headcircle headcircle-odd">
+      <h2 class="head head-odd">
+        東海エリア
+      </h2>
+    </div>
+    <div class="headtext-odd">
+      <p>
+      現在お届けを予定している企画はございません。
+      </p>
+    </div>
+    <div class="headcircle headcircle-even">
+      <h2 class="head head-even">
+        関西エリア
+      </h2>
+    </div>
+    <div class="headtext-even">
+      <p>
+      現在お届けを予定している企画はございません。
+      </p>
+    </div>
+    <div class="headcircle headcircle-odd">
+      <h2 class="head head-odd">
+        中四国エリア
+      </h2>
+    </div>
+    <div class="headtext-odd">
+      <p>
+      現在お届けを予定している企画はございません。
+      </p>
+    </div>
+    <div class="headcircle headcircle-even">
+      <h2 class="head head-even">
+        九州エリア
+      </h2>
+    </div>
+    <div class="headtext-even">
+      <p>
+      現在お届けを予定している企画はございません。
+      </p>
+    </div>
+  </section> -->
+
+  <!-- <hr> -->
+
+  <!-- pricing table -->
+  <section class="wrap pricing-table">
+    <div class="headcircle headcircle-odd">
+      <h2 class="head head-odd">
+        撮影料金
+      </h2>
+    </div>
+    <div class="headtext-odd">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-md-5 col-lg-4">
+            <div class="item animate">
+              <div class="ribbon">Best Value</div>
+              <div class="heading">
+                <h3>Standard</h3>
+              </div>
+              <div class="price">
+                <h2>3,800円</h2>
+                <small>（税込）</small>
+              </div>
+              <div class="features">
+                <h4><span class="feature">撮影時間</span> : <span class="value">20分</span></h4>
+                <h4><span class="feature">データ</span> : <span class="value">10枚</span></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <div class="item animate delay">
+              <div class="heading">
+                <h3>Special</h3>
+              </div>
+              <div class="price">
+                <h2>7,600円</h2>
+                <small>（税込）</small>
+              </div>
+              <div class="features">
+                <h4><span class="feature">撮影時間</span> : <span class="value">50分</span></h4>
+                <h4><span class="feature">データ</span> : <span class="value">30枚</span></h4>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <hr>
+
+  <!-- お問い合わせフォーム -->
+  <section class="wrap">
+    <div class="headcircle headcircle-even">
+      <h2 class="head head-even">
+        お問い合わせ
+      </h2>
+    </div>
+    <div class="headtext-even">
+      <div class="Form">
+        <div class="Form-Item">
+          <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>お名前</p>
+          <input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
+          <input type="text" class="Form-Item-Input" placeholder="例）000-0000-0000">
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+          <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+          <textarea class="Form-Item-Textarea"></textarea>
+        </div>
+        <button class="btn" type="submit">送信する</button>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- ほめ写紹介 -->
+  <section class="homesha wrap">
+    <div class="headcircle headcircle-odd">
+      <h2 class="head head-odd">
+        <img src="img/logo homeshaPJ.png" alt="">
+      </h2>
+    </div>
+    <div class="headtext-odd">
+      <p class="animate">
+        「ほめ写プロジェクト」とは、子どもの写真プリントを家の中に飾り、それを見ながらほめてあげることで自己肯定感を高めようという、新しい子育て習慣のこと。<br>
+        「ほめ写プロジェクト」では、FUJIFILMさんをメインパートナーに、多くの賛同企業とともに、子どもの自己肯定感向上に写真の力を役立てようと、ほめ写の発信・啓発に取り組んでいます。<br>
+        tomosは応援企業として、子どもの自己肯定感が育つ「ほめ写プロジェクト」に賛同しています。
+      </p>
+    </div>
+  </section>
+
+
+  <!-- mask -->
+  <div class="mask">
+    <svg id="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" stroke-width="2.0" stroke="#896760" fill="none" class="duration-300 transform transition-all" style="width: 24px; height: 24px;">
+      <path d="M8.06 8.06l47.35 47.88M55.94 8.06L8.59 55.94"></path>
+    </svg>
+    <nav>
+      <ul>
+        <li><a href="#">予約する</a></li>
+        <li><a href="#">エリア選択</a></li>
+        <li><a href="#">撮影料金</a></li>
+        <li><a href="#">ギャラリー</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+        <li><a href="tokushouho.html">特商法表示</a></li>
+        <li><a href="#">プライバシーポリシー</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- footer -->
+  <section class="wrap">
+    <footer>
+      <small>(c) tomos photo co.,ltd</small>
+    </footer>
+  </section>
+
+
+  <!-- test -->
+  <div class="float">
+    <nav>
+      <ul>
+        <li id="calendar">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" stroke-width="2.0" stroke="#896760" fill="none" class="duration-300 transform transition-all" style="width: 22px; height: 22px;">
+              <rect x="9.59" y="9.59" width="44.82" height="44.82" rx="2.5"></rect><path d="M9.59 20.59h44.82M19.7 9.59v-5M43.66 9.59v-5M16.14 27.92h6.15v6.15h-6.15zM28.78 27.92h6.15v6.15h-6.15zM41.26 27.92h6.15v6.15h-6.15zM16.36 39.68h6.15v6.15h-6.15zM29.01 39.68h6.15v6.15h-6.15zM41.49 39.68h6.15v6.15h-6.15z"></path>
+            </svg>
+            ご予約
+          </a>
+        </li>
+        <li id="open2">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" stroke-width="2.5" stroke="#896760" fill="none" class="duration-300 transform transition-all" style="width: 21px; height: 21px;">
+            <path d="M7.68 32h48.64M7.68 15.97h48.64M7.68 48.03h48.64"></path>
+          </svg>
+          menu
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+
+
+
+
+  <script src="js/main.js"></script>
 </body>
 </html>
